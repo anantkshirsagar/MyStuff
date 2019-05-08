@@ -1,10 +1,13 @@
 package com.connection_master_api;
 
+import java.io.IOException;
+
 public class TestDBService {
 	public static void main(String[] args) {
 		try {
 			//insert();
 			findEmpById(1);
+			printEmployeeUsingQueryRunner();
 		} catch (Exception e) {
 			System.out.println(" Exception: " +e);
 		}		
@@ -24,5 +27,10 @@ public class TestDBService {
 		DatabaseService databaseService = new DatabaseService();
 		Employee employee = databaseService.find(1);
 		System.out.println(" Employee record: " +employee);
+	}
+	
+	public static void printEmployeeUsingQueryRunner() throws Exception {
+		DatabaseService dbService = new DatabaseService();
+		dbService.usingQueryRunner();
 	}
 }
