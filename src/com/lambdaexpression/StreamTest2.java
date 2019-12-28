@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 public class StreamTest2 {
 	public static void main(String[] args) {
-		List<Integer> numbers = getNumbers();
+		List<Integer> numbers = getNumbers();	// List of 1 to 100 Lakh
 		findSquareRootUsingStream(numbers);
 		findSquareRootUsingLoop(numbers);
 	}
@@ -35,7 +35,6 @@ public class StreamTest2 {
 		System.out.println("For loop: Execution time: " + totalTime + " ns");
 	}
 
-	// List of 10 Lakh nos
 	public static List<Integer> getNumbers() {
 		int min = 1;
 		int max = 10000000;
