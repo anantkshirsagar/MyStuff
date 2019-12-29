@@ -1,4 +1,4 @@
-package com.lambdaexpression;
+package work;
 
 public class ShadowVariableEx {
 	String str = "Hello Java";

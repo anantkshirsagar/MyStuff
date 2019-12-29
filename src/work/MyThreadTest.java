@@ -1,4 +1,4 @@
-package com.lambdaexpression;
+package work;
 
 public class MyThreadTest {
 	public static void main(String[] args) throws Exception {
